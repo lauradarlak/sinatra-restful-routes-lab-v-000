@@ -58,6 +58,10 @@ class ApplicationController < Sinatra::Base
 #     redirect to '/recipes'
 #   end
 
+get '/' do
+  erb :index
+end
+
 get '/recipes/new' do #loads new form
     erb :new
   end
